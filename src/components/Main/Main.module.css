@@ -1,0 +1,17 @@
+.main{
+    grid-area: article;
+    margin-bottom: 0px;
+    background-color: black;
+}
+
+.imagem{
+    width: 100%;
+    opacity: 0.3;
+    position: relative;
+}
+
+.relativo{
+    position: fixed;
+    font-size: 200px;
+    color: aqua;
+}

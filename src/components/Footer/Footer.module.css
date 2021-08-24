@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(32, 32, 32);
+    grid-area: footer;
+    margin-top: 0px;
+}
+
+.textFooter{
+    color: #ccc2a6;
+    font-size: 15px;
+}
