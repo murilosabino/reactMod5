@@ -1,7 +1,8 @@
 import React from "react";
-import * as S from "./Sobre.styles";
+import style from "./Sobre.module.css";
+
 const Sobre = () => {
-  return <S.Container>Sobre</S.Container>;
+  return <div>Sobre</div>;
 };
 
 export default Sobre;

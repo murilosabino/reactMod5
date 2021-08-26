@@ -1,7 +1,12 @@
 import React from "react";
-import * as S from "./Menu.styles";
+import Lanches from "../../components/Lanches/Lanches";
+import style from "./Menu.module.css";
 const Menu = () => {
-  return <S.Container>Menu</S.Container>;
+  return (
+    <div>
+      <Lanches />
+    </div>
+  );
 };
 
 export default Menu;

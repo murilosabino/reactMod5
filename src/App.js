@@ -2,15 +2,12 @@ import React from "react";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Botao from "./components/Botao/Botao";
-
-import Input from "./components/Input/Input";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Sobre from "./Pages/Sobre";
-import Contato from "./Pages/Contatos";
-import Menu from "./Pages/Menu";
+import Sobre from "./Pages/Sobre/index";
+import Contato from "./Pages/Contatos/index";
+import Menu from "./Pages/Menu/index";
 import Home from "./Pages/Home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
