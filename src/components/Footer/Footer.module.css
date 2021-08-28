@@ -1,13 +1,34 @@
 .footer{
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     background: rgb(32, 32, 32);
     grid-area: footer;
-    margin-top: 0px;
+    display:grid;
+    
+    
 }
 
 .textFooter{
     color: #ccc2a6;
+    font-size: 18px;
+    display: grid;
+    text-align: center;
+   
+}
+
+.fa-facebook .fa-instagram {
+    display:grid;
+    color: burlywood;
+   
+}
+
+ p {
+    display: grid;
+    grid-template-columns: 260px 500px;
+    column-gap: 10px;
+    justify-content: space-around;
+    color: burlywood;
     font-size: 15px;
 }
+

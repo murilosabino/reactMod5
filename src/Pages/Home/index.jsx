@@ -8,7 +8,9 @@ function Home() {
         className={style.imagem}
         src="https://www.picturesof.pics/images/quotes/english/general/black-burger-with-chiken-and-52650-310280.jpg"
       ></img>
-      <p className={style.relativo}>Testeeeeeeee</p>
+      
+      <p className={style.relativo}></p>
+      
     </section>
   );
 }
