@@ -1,7 +1,6 @@
 import React from "react";
-import style from "./Input.module.css";
 
-function Input(props) {
+function TextArea(props) {
   return (
     <div>
       <label>{props.children}</label>
@@ -15,4 +14,4 @@ function Input(props) {
   );
 }
 
-export default Input;
+export default TextArea;

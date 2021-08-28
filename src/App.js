@@ -20,7 +20,7 @@ function App() {
           <Route path="/Sobre" component={Sobre} />
           <Route path="/Contato" component={Contato} />
           <Route path="/Menu" component={Menu} />
-          <Route path="/Avaliacoes" component={Avaliacoes} />
+          <Route path="/Avaliacoes*" component={Avaliacoes} />
         </Switch>
         <Footer />
       </BrowserRouter>
