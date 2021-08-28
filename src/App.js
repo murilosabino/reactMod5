@@ -7,6 +7,7 @@ import Sobre from "./Pages/Sobre/index";
 import Contato from "./Pages/Contatos/index";
 import Menu from "./Pages/Menu/index";
 import Home from "./Pages/Home";
+
 import Footer from "./components/Footer/Footer";
 import Avaliacoes from "./Pages/Avaliacoes/index";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Menu" component={Menu} />
           <Route path="/Avaliacoes*" component={Avaliacoes} />
         </Switch>
+       
         <Footer />
       </BrowserRouter>
     </section>

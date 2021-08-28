@@ -1,0 +1,146 @@
+.main {
+  grid-area: article;
+  margin-bottom: 0px;
+  background-color: black;
+}
+
+.imagem {
+  width: 100%;
+  opacity: 0.3;
+  position: relative;
+}
+
+.relativo {
+  position: fixed;
+  font-size: 200px;
+  color: aqua;
+}
+
+.principal {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 300px 100px 200px;
+  grid-template-areas:
+    "sectioUm sectioUm"
+    "veg trad"
+    "sectioDois sectioDois"
+    "uber ifood";
+  background-color: rgb(56, 52, 56);
+  color: whitesmoke;
+  font: inherit;
+  grid-gap: 20px;
+}
+
+.titulosection {
+  justify-self: center;
+  grid-area: sectioUm;
+  padding: 22px;
+  font-family: 'Perpetua';
+  font-size: 34px;
+  color: burlywood;
+  
+  
+}
+
+.uber {
+  justify-self: center;
+  grid-area: uber;
+  margin-left: 50%;
+  width: 30vh;
+  height: 20vh;
+  padding: 18px;
+}
+
+.ifood {
+  justify-self: center;
+  width: 50px;
+  height: 50px;
+  grid-area: ifood;
+  margin-right: 50%;
+  width: 18vh;
+  height: 18vh;
+  padding: 26px;
+}
+
+.veg {
+  justify-self: center;
+  border-radius: 10%;
+  grid-area: imagem;
+  height: 280px;
+  width: 320px;
+  padding: 12px;
+  margin-left: 55%;
+}
+
+.trad {
+  justify-self: center;
+  border-radius: 10%;
+  grid-area: trad;
+  height: 280px;
+  width: 320px;
+  padding: 12px;
+  margin-left: 10%;
+}
+
+.app {
+  justify-self: center;
+  grid-area: sectioDois;
+  padding: 65px;
+  font-family: 'Perpetua';
+  color: burlywood;
+  font-size: 35px;
+}
+
+.divVeg {
+  justify-content: center;
+  text-align: center;
+  justify-self: center;
+
+  grid-area: veg;
+  display: grid;
+  grid-template-areas:
+    "imagem"
+    "titulo"
+    "descricao";
+}
+
+.tituVeg {
+  justify-self: center;
+  grid-area: titulo;
+  text-align: center;
+  font-family: 'Perpetua';
+  color: burlywood;
+  margin-left: 5px;
+ 
+}
+
+.descrVeg {
+  justify-self: center;
+  grid-area: descricao;
+}
+
+.tituTrad{
+  justify-self: center;
+  grid-area: titulo;
+  text-align: center;
+  font-family: 'Perpetua';
+  color: burlywood;
+  margin-right: 18px;
+}
+
+.descrTrad{
+  justify-self: center;
+  grid-area: descricao;
+}
+
+.tituTrad{
+    margin-right: 25px;
+}
+.tituTrad{
+   margin-left: 250px;
+}
+
+ @media(max-width:600px){
+
+ }

@@ -1,13 +1,19 @@
 .header{
     background: rgb(32, 32, 32);
+   
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 43%);
     grid-area: header;
     z-index: 0;
     position: relative;
     display: block;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+     
 }
 
 .navH{
+  
     display: flex;
     justify-content: space-around;
     font-family: 'Perpetua';
@@ -18,15 +24,22 @@
     color: #ccc2a6;
     text-align: center;
     text-decoration : none;
+    
     padding: 9px 0;
+    
 }
 
 .larica{
     font-family: 'Ink Free';
     font-size: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+  
+    
 }
 
 .navH a:hover, .navH a:active{
     cursor: pointer;
     color: whitesmoke;
+
 }
