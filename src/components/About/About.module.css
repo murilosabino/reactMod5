@@ -47,9 +47,9 @@
   justify-self: center;
   grid-area: uber;
   margin-left: 50%;
-  width: 28vh;
+  width: 30vh;
   height: 20vh;
-
+  padding: 18px;
 }
 
 .ifood {
@@ -60,11 +60,12 @@
   margin-right: 50%;
   width: 18vh;
   height: 18vh;
-  padding: 18px;
+  padding: 26px;
 }
 
 .veg {
   justify-self: center;
+  border-radius: 10%;
   grid-area: imagem;
   height: 280px;
   width: 320px;
@@ -74,6 +75,7 @@
 
 .trad {
   justify-self: center;
+  border-radius: 10%;
   grid-area: trad;
   height: 280px;
   width: 320px;
@@ -84,7 +86,7 @@
 .app {
   justify-self: center;
   grid-area: sectioDois;
-  padding: 45px;
+  padding: 65px;
   font-family: 'Perpetua';
   color: burlywood;
   font-size: 35px;
