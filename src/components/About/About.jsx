@@ -4,6 +4,7 @@ import ifood from "../../img/ifood.png";
 import uber from "../../img/uber.png";
 import vegetariano from "../../img/veg.jpg";
 import tradicional from "../../img/tradicional.jpg";
+import { getAllByTitle } from "@testing-library/react";
 
 class About extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class About extends React.Component {
           <h4 className={style.descrVeg}></h4>
         </div>
 
+       
         <div className={style.divTrad}>
           <img
             className={style.trad}
