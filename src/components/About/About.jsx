@@ -9,11 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <section className={style.principal}>
-        <h1 className={style.titulosection}>
-          Para todos os gostos e bolsos
-          <br />
-          Nossos queridinhos mais pedidos
-        </h1>
+        <h1 className={style.titulosection}>Nossos queridinhos mais pedidos</h1>
 
         <div className={style.divVeg}>
           <img
@@ -37,7 +33,7 @@ class About extends React.Component {
           <h4 className={style.descrTrad}></h4>
         </div>
 
-        <h2 className={style.app}>Peça Pelo Aplicativo</h2>
+        <h2 className={style.app}>Peça pelo aplicativo</h2>
 
         <img className={style.uber} src={uber} width="100" height="50" />
 
