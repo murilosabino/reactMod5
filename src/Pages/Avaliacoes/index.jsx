@@ -12,8 +12,6 @@ const Avaliacoes = () => {
     <div>
       <div className={styles.CardInput}>
       <NewAssessments />
-      <UpdateAssessments />
-      <DeleteAssessments />
       </div>   
       <Comentarios />
     </div>

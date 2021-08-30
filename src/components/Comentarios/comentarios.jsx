@@ -14,7 +14,18 @@ const onChange = (e) => {
 }
 
 const mudaDisplay = () => {
-    setDisplay('flex')
+    if(displayComentarios == "none")
+    {
+      console.log('Mudando display pra flex')
+      setDisplay('flex')
+      console.log(displayComentarios)
+    }
+    else
+    {
+      console.log('Mudando display pra none')
+      setDisplay("none")
+      console.log(displayComentarios)
+    }
 }
 
   useEffect(() => {
@@ -24,32 +35,31 @@ const mudaDisplay = () => {
         setDadosApi(dados.result);
       });
   }, []);
-
-  console.log(valueInput)
-  console.log(dadosApi)
   
   return (
       <div>
         <Botao onClick={mudaDisplay}>Mostrar Comentários</Botao>
         <div style={{display:displayComentarios}}>
-            {!!dadosApi ? (
-              dadosApi.map((item) => {
-                return(
-                  <div>
-                  {item.NOME.includes(valueInput) ? (
-                    <div className={style.Valores}>
-                      <p>{item.NOME}</p>
-                      <p>{item.COMENTARIOS}</p>
+          <div>
+              {!!dadosApi ? (
+                dadosApi.map((item) => {
+                  return(
+                    <div>
+                    {item.NOME.includes(valueInput) ? (
+                      <div className={style.Valores}>
+                        <p>{item.NOME}</p>
+                        <p>{item.COMENTARIOS}</p>
+                      </div>
+                    ): (
+                      <p></p>
+                    ) }
+                    
                     </div>
-                  ): (
-                    <p></p>
-                  ) }
-                  
-                  </div>
-                )                
-              })
-            ): (<p>Carregando</p>)}
-          </div>
+                  )                
+                })
+              ): (<p>Carregando</p>)}
+            </div>
+            </div>
         </div>          
   )};
 
