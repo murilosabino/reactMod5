@@ -1,0 +1,9 @@
+.Valores{
+    font-size: 20px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10vh;
+    flex-direction: column;
+}
