@@ -41,8 +41,7 @@ const NewAssessments = () => {
     e.preventDefault();
     axios
       .delete(
-        `https://shrouded-atoll-54679.herokuapp.com/assessments/delete/${valorInput}`,
-        valueInput
+        `https://shrouded-atoll-54679.herokuapp.com/assessments/delete/${valorInput}`
       )
       .then((response) => {
         alert({valorInput});

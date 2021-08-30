@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Input from "../components/Input/Input";
-import TextArea from "../components/TextArea/TextArea";
-import Botao from "../components/Botao/Botao";
+import Input from "../Input/Input";
+import TextArea from "../TextArea/TextArea";
+import Botao from "../Botao/Botao";
 
 function DeleteAssessments() {
   const [valueInput, setValueInput] = useState({
