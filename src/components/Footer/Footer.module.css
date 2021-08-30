@@ -4,7 +4,9 @@
     align-items: center;
     background: rgb(32, 32, 32);
     grid-area: footer;
-    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
 .textFooter{
