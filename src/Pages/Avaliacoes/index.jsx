@@ -8,10 +8,10 @@ import DeleteAssessments from "../../DeleteAssessments";
 
 const Avaliacoes = () => {
   return (
-    <div>
+    <div className={styles.new}>
       <NewAssessments />
-      <UpdateAssessments />
-      <DeleteAssessments />
+      {/* <UpdateAssessments />
+      <DeleteAssessments /> */}
     </div>
   );
 };

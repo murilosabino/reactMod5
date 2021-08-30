@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 580px;
+    justify-content: center;
+}
+
+.new {
+    display: flex;
+    border-bottom: 10px;
+}
+
+.input {
+    border-bottom: 10px;
+}
