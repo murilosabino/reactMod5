@@ -1,6 +1,6 @@
 .header{
     background: rgb(32, 32, 32);
-   
+    width: 100vw;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 43%);
     grid-area: header;
     z-index: 0;

@@ -22,9 +22,9 @@ const onChange = (e) => {
   console.log(dadosApi)
   
   return (
-        <div>
-          <label htmlFor="lanche">lanche</label>
-          <input type="text" name="lanche" onChange={onChange}/>
+        <div className={styles.lanche}>
+          <label className={styles.nome} htmlFor="lanche">Pesquise o lanche: </label>
+          <input className={styles.nomedolanche} type="text" name="lanche" onChange={onChange}/>
             {!!dadosApi ? (
               dadosApi.map((item) => {
                 return(
@@ -32,7 +32,7 @@ const onChange = (e) => {
                   {item.NOME.includes(valueInput) ? (
                     <div>
                       <p>{item.NOME}</p>
-                      <img src={item.FOTO} alt="#" />
+                      <img className={styles.imagem} src={item.FOTO} alt="#" />
                     </div>
                   ): (
                     <p></p>
@@ -43,7 +43,7 @@ const onChange = (e) => {
                 
               })
             ): (<p>Carregando</p>)}
-          </div>
+        </div>
 
   )};
 
