@@ -17,7 +17,7 @@ function CardTime(props) {
       <article className={styles.acordeon}>
         <button onClick={loadingInfos} className={styles.buttonCard}>
           <p className={styles.nameCard}>{cardName}</p>
-          <img src={iconeBurger} className={`${styles.buttonIcon} ${infos}`} />
+          {/* <img src={iconeBurger} className={`${styles.buttonIcon} ${infos}`} /> */}
         </button>
         {infos ? (
           <div className={styles.cardText}>
