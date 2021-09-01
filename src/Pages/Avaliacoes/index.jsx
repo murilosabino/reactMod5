@@ -3,9 +3,10 @@ import { Switch, Route, Link } from "react-router-dom";
 import NewAssessments from "../../components/NewAssessments";
 import Input from "../../components/Input/Input";
 import styles from "./Avaliacoes.module.css";
-import UpdateAssessments from "../../components/UpdateAssessments";
-import DeleteAssessments from "../../DeleteAssessments";
+// import UpdateAssessments from "../../components/UpdateAssessments";
+// import DeleteAssessments from "../../DeleteAssessments";
 import Botao from "../../components/Botao/Botao";
+import Comentarios from "../../components/Comentarios/comentarios";
 
 const Avaliacoes = () => {
   return (
@@ -23,7 +24,7 @@ const Avaliacoes = () => {
 
       <Switch>
         <Route path="/avaliacoes/nova" component={NewAssessments} />
-        <Route path="/avaliacoes/edit" component={DeleteAssessments} />
+        <Route path="/avaliacoes/edit" component={Comentarios} />
       </Switch>
       {/* <NewAssessments /> */}
       {/* <UpdateAssessments />
