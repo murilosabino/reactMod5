@@ -1,10 +1,14 @@
 .footer{
     
+    display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(32, 32, 32);
     grid-area: footer;
-    display:grid;
+    margin-top: 0px;
+    position: relative;
+    width: 100vw;
+    bottom: 0;
     
     
 }
@@ -14,7 +18,7 @@
     font-size: 18px;
     display: grid;
     text-align: center;
-   
+    
 }
 
 i {

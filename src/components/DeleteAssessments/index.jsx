@@ -21,7 +21,7 @@ function DeleteAssessments() {
     e.preventDefault();
     axios
       .delete(
-        `https://shrouded-atoll-54679.herokuapp.com/assessments/delete/${"hhhhhhhh"}`,
+        `https://shrouded-atoll-54679.herokuapp.com/assessments/delete/${"Paloma Carvalho"}`,
         valueInput
       )
       .then((response) => {

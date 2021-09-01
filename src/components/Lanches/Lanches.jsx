@@ -23,7 +23,7 @@ const onChange = (e) => {
   
   return (
         <div className={styles.lanche}>
-          <label htmlFor="lanche">lanche</label>
+          <label className={styles.nome} htmlFor="lanche">Pesquise o lanche: </label>
           <input className={styles.nomedolanche} type="text" name="lanche" onChange={onChange}/>
             {!!dadosApi ? (
               dadosApi.map((item) => {
@@ -43,7 +43,7 @@ const onChange = (e) => {
                 
               })
             ): (<p>Carregando</p>)}
-          </div>
+        </div>
 
   )};
 

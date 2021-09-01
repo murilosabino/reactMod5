@@ -7,13 +7,13 @@ import Sobre from "./Pages/Sobre/index";
 import Time from "./Pages/Time/index";
 import Menu from "./Pages/Menu/index";
 import Home from "./Pages/Home";
-
+import style from "./App.module.css";
 import Footer from "./components/Footer/Footer";
 import Avaliacoes from "./Pages/Avaliacoes/index";
 
 function App() {
   return (
-    <section>
+    <section className={style.teste}>
       <BrowserRouter>
         <Header />
         <Switch>

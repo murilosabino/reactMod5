@@ -8,7 +8,7 @@ import styles from "./Avaliacoes.module.css";
 import Botao from "../../components/Botao/Botao";
 import Comentarios from "../../components/Comentarios/comentarios";
 
-const Avaliacoes = () => {
+const Avaliacoes = (props) => {
   return (
     <main className={styles.new}>
       <h1>Seja um cliente no 10, nos avalie e tenha direito a benefícios.</h1>

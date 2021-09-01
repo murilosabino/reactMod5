@@ -1,8 +1,15 @@
-.CardInput{
-    background-color:rgb(238, 238, 238);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row; 
+.CardInput {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
+.btn {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
