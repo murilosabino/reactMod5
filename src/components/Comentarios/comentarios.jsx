@@ -82,7 +82,6 @@ const mudaDisplay = () => {
                 <div style={{display:displayModal}}>
                   <Modal funcao={MostraModal}/>
                 </div>
-              
             </div>
         </div>          
   )};
