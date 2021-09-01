@@ -67,20 +67,24 @@
   justify-self: center;
   border-radius: 10%;
   grid-area: imagem;
-  height: 280px;
-  width: 320px;
+  height: 260px;
+  width: 300px;
   padding: 12px;
   margin-left: 55%;
+  border:solid 1px;
+  box-shadow: 10px 10px 10px 5px black;
 }
 
 .trad {
   justify-self: center;
   border-radius: 10%;
   grid-area: trad;
-  height: 280px;
-  width: 320px;
+  height: 260px;
+  width: 300px;
   padding: 12px;
   margin-left: 10%;
+  border:solid 1px;
+  box-shadow: 10px 10px 10px 5px black;
 }
 
 .app {
@@ -141,6 +145,6 @@
    margin-left: 250px;
 }
 
- @media(max-width:600px){
-
- }
+@media screen and (width: 500px) { 
+	/* estilização para larguras de viewport exatamente igual a 500px */
+}    

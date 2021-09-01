@@ -1,10 +1,14 @@
 .footer{
     
+    display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(32, 32, 32);
     grid-area: footer;
-    display:grid;
+    margin-top: 0px;
+    position: relative;
+    width: 100vw;
+    bottom: 0;
     
     
 }
@@ -14,20 +18,30 @@
     font-size: 18px;
     display: grid;
     text-align: center;
-   
+    
 }
 
-i {
-    display:grid;
-    color: burlywood; 
-}
-
- p {
+.endereco  {
     display: grid;
-    grid-template-columns: 260px 500px;
+    grid-template-columns: 260px 50px;
     column-gap: 10px;
     justify-content: space-around;
-    color: burlywood;
+    color:burlywood;
     font-size: 15px;
+    margin-top: 25px;
+    padding: 25px;
 }
+
+i{
+    color:burlywood;
+    display: flex;
+}
+.fa-instagram{
+    color:burlywood;
+}
+
+@media screen and (width: 500px) { 
+	/* estilização para larguras de viewport exatamente igual a 500px */
+}    
+
 

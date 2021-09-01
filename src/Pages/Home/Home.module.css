@@ -15,3 +15,28 @@
     font-size: 200px;
     color: aqua;
 }
+.animationHome{
+    font-size: large;
+    
+    padding: 58px;
+}
+.quadrado {
+    color: aliceblue;
+    font-weight:15px;
+   margin-top: 50px;
+    animation: go-back 2s;
+    text-align: center;
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+
+  @media screen and (width: 500px) { 
+	/* estilização para larguras de viewport exatamente igual a 500px */
+}    
