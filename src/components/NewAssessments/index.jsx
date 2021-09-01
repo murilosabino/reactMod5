@@ -53,32 +53,45 @@ const NewAssessments = () => {
   return (
     <div>
       <fieldset disabled={desabilitar}>
-        <form onSubmit={handleFormSubmit}>
-          <Input
-            // value={value.nome}
-            type={"text"}
-            name={"NOME"}
-            onChangeValue={handleChangeInput}
-          >
-            Nome:
-          </Input>
-          <Input
-            onChangeValue={handleChangeInput}
-            name={"TELEFONE"}
-            disabled={true}
-          >
-            Telefone:
-          </Input>
-          <TextArea onChangeValue={handleChangeInput} name={"COMENTARIOS"}>
-            Comentario:
-          </TextArea>
-          <Input onChangeValue={handleChangeInput} name={"NOTA"}>
-            Nota:
-          </Input>
-        </form>
+        <div className={style.main}>
+          <form className={style.formulario} onSubmit={handleFormSubmit}>
+            <Input
+              className={style.input}
+              // value={value.nome}
+              type={"text"}
+              name={"NOME"}
+              onChangeValue={handleChangeInput}
+            >
+              Nome:
+            </Input>
+            <Input
+              className={style.input}
+              onChangeValue={handleChangeInput}
+              name={"TELEFONE"}
+            >
+              Telefone:
+            </Input>
+            <TextArea
+              className={style.texto}
+              onChangeValue={handleChangeInput}
+              name={"COMENTARIOS"}
+            >
+              Comentario:
+            </TextArea>
+            <Input
+              className={style.input}
+              onChangeValue={handleChangeInput}
+              name={"NOTA"}
+            >
+              Nota:
+            </Input>
+          </form>
+        </div>
       </fieldset>
-      <Botao onClick={handleFormSubmit}>Enviar</Botao>
-      <Botao onClick={deleteFormSubmit}>Desfazer</Botao>
+      <div>
+        <Botao onClick={handleFormSubmit}>Enviar</Botao>
+        <Botao onClick={deleteFormSubmit}>Desfazer</Botao>
+      </div>
     </div>
   );
 };
