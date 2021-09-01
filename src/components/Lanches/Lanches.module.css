@@ -16,6 +16,28 @@ body {
 .imagem {
     height: 50%;
     width: 50%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    border:solid 1px;
+    box-shadow: 1px 1px 1px 3px black;
+
+   
+}
+
+
+
+p{
+    display: grid;
+    grid-template-columns: 260px 50px;
+    column-gap: 10px;
+    justify-content: space-around;
+    color: rgb(2, 2, 2);
+    font-size: 15px;
+    font: inherit;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.nomedolanche{
+    border:solid 1px;
+    box-shadow: 1px 1px 1px 1px black;  
 }
