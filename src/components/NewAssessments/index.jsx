@@ -3,7 +3,7 @@ import axios from "axios";
 import Input from "../Input/Input";
 import TextArea from "../TextArea/TextArea";
 import Botao from "../Botao/Botao";
- 
+import style from "./newAssessment.module.css"
 
 const NewAssessments = () => {
   const [valueInput, setValueInput] = useState({
@@ -55,8 +55,9 @@ const NewAssessments = () => {
   return (
     <div>
       <fieldset disabled={desabilitar}>
-          <form onSubmit={handleFormSubmit}>
-            <Input
+        <div className={style.main}>
+          <form className={style.formulario} onSubmit={handleFormSubmit}>
+            <Input className = {style.input}
               // value={value.nome}
               type={"text"}
               name={"NOME"}
@@ -64,20 +65,22 @@ const NewAssessments = () => {
             >
               Nome:
             </Input>
-            <Input onChangeValue={handleChangeInput} name={"TELEFONE"} disabled={true}>
+            <Input className={style.input} onChangeValue={handleChangeInput} name={"TELEFONE"}>
               Telefone:
             </Input>
-            <TextArea onChangeValue={handleChangeInput} name={"COMENTARIOS"}>
+            <TextArea className={style.texto} onChangeValue={handleChangeInput} name={"COMENTARIOS"}>
               Comentario:
             </TextArea>
-            <Input onChangeValue={handleChangeInput} name={"NOTA"}>
+            <Input className={style.input} onChangeValue={handleChangeInput} name={"NOTA"}>
               Nota:
             </Input>
-        </form>
+          </form>
+        </div>
       </fieldset>
-            <Botao onClick={handleFormSubmit}>Enviar</Botao>
-            <Botao onClick={deleteFormSubmit}>Desfazer</Botao>
-
+      <div>
+              <Botao onClick={handleFormSubmit}>Enviar</Botao>
+              <Botao onClick={deleteFormSubmit}>Desfazer</Botao>
+      </div>
     </div>
   );
 };
