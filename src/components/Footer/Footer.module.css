@@ -21,6 +21,11 @@
     
 }
 
+i {
+    display:grid;
+    color: burlywood; 
+}
+
 .endereco  {
     display: grid;
     grid-template-columns: 260px 50px;
