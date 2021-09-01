@@ -7,7 +7,7 @@
     grid-area: footer;
     margin-top: 0px;
     position: relative;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
     
     
@@ -18,7 +18,7 @@
     font-size: 18px;
     display: grid;
     text-align: center;
-   
+    
 }
 
 i {
