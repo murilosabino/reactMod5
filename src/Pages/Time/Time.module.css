@@ -4,6 +4,7 @@
     "title title title"
     "card card card"
     "card card card";
+  width: 100vw;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px repeat(3, auto);
   grid-gap: 20px;
