@@ -3,7 +3,7 @@ import axios from "axios";
 import Input from "../Input/Input";
 import TextArea from "../TextArea/TextArea";
 import Botao from "../Botao/Botao";
-import style from "./newAssessment.module.css"
+import style from "./newAssessment.module.css";
 
 const NewAssessments = () => {
   const [valueInput, setValueInput] = useState({
@@ -26,7 +26,7 @@ const NewAssessments = () => {
         valueInput
       )
       .then((response) => {
-        alert(response.data.result.length + " cadastros!");
+        console.log(response.data.result);
       });
   };
 
@@ -35,7 +35,8 @@ const NewAssessments = () => {
   return (
     <div className={style.main}>
       <form className={style.formulario} onSubmit={handleFormSubmit}>
-        <Input className = {style.input}
+        <Input
+          className={style.input}
           // value={value.nome}
           type={"text"}
           name={"NOME"}
@@ -43,16 +44,30 @@ const NewAssessments = () => {
         >
           Nome:
         </Input>
-        <Input className={style.input} onChangeValue={handleChangeInput} name={"TELEFONE"}>
+        <Input
+          className={style.input}
+          onChangeValue={handleChangeInput}
+          name={"TELEFONE"}
+        >
           Telefone:
         </Input>
-        <TextArea className={style.texto} onChangeValue={handleChangeInput} name={"COMENTARIOS"}>
+        <TextArea
+          className={style.texto}
+          onChangeValue={handleChangeInput}
+          name={"COMENTARIOS"}
+        >
           Comentario:
         </TextArea>
-        <Input className={style.input} onChangeValue={handleChangeInput} name={"NOTA"}>
+        <Input
+          className={style.input}
+          onChangeValue={handleChangeInput}
+          name={"NOTA"}
+        >
           Nota:
         </Input>
-        <Botao className={style.botao} onClick={handleFormSubmit}>Clique</Botao>
+        <Botao className={style.botao} onClick={handleFormSubmit}>
+          Clique
+        </Botao>
       </form>
     </div>
   );
