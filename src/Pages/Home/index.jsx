@@ -4,10 +4,10 @@ import About from "../../components/About/About";
 function Home() {
   return (
     <section className={style.main}>
-      <img
-        className={style.imagem}
-        src="https://www.picturesof.pics/images/quotes/english/general/black-burger-with-chiken-and-52650-310280.jpg"
-      ></img>
+      <div className={style.vazia}>
+        <p className={style.texto}>Do tamanho da sua fome!</p>
+      </div>
+
        
       <p className={style.relativo}></p>
       <About/>

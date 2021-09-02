@@ -20,7 +20,6 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 300px 100px 200px;
   grid-template-areas:
     "sectioUm sectioUm"
     "veg trad"
@@ -70,7 +69,6 @@
   height: 260px;
   width: 300px;
   padding: 12px;
-  margin-left: 55%;
   border:solid 1px;
   box-shadow: 10px 10px 10px 5px black;
 }
@@ -100,7 +98,7 @@
   justify-content: center;
   text-align: center;
   justify-self: center;
-
+  animation: animaEsquerda 1s linear 1;
   grid-area: veg;
   display: grid;
   grid-template-areas:
@@ -124,6 +122,19 @@
   grid-area: descricao;
 }
 
+.divTrad {
+  justify-content: center;
+  text-align: center;
+  justify-self: center;
+  animation: animaDireita 1s linear 1;
+  grid-area: trad;
+  display: grid;
+  grid-template-areas:
+    "imagem"
+    "titulo"
+    "descricao";
+}
+
 .tituTrad{
   justify-self: center;
   grid-area: titulo;
@@ -138,11 +149,32 @@
   grid-area: descricao;
 }
 
-.tituTrad{
-    margin-right: 25px;
+
+@keyframes animaDireita {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
-.tituTrad{
-   margin-left: 250px;
+
+@keyframes animaEsquerda {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animaDireita {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (width: 500px) { 

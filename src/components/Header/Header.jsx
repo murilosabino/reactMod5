@@ -7,11 +7,11 @@ function Header() {
     <header className={style.header}>
       <nav className={style.navH}>
         <Link to="/menu">Cardápio</Link>
-        <Link to="/time">Nosso Time</Link>
+        <Link to="/time">Time de Desenvolvimento</Link>
         <Link className={style.larica} to="/">
           Larica
         </Link>
-        <Link to="/sobre">sobre</Link>
+        <Link to="/sobre">Sobre</Link>
         <Link to="/avaliacoes/nova">Avaliações</Link>
 
         {/* <a href="/Menu">Cardápio</a>

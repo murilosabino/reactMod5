@@ -18,8 +18,15 @@ body {
     width: 50%;
     border:solid 1px;
     box-shadow: 1px 1px 1px 3px black;
+    margin-bottom: 50px;
 
    
+}
+
+.nome{
+    font-family: 'Perpetua';
+    font-size: 25px;
+    font-weight: bold;
 }
 
 
@@ -38,6 +45,7 @@ p{
 }
 
 .nomedolanche{
+    font-family: 'Perpetua';
     border:solid 1px;
     box-shadow: 1px 1px 1px 1px black;  
 }

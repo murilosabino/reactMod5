@@ -10,7 +10,7 @@ const Contato = () => {
         srcImg={fotoVagner}
         cardName={"Vagner Messias"}
         cardText={
-          "Estudante de Desenvolvimento, engenheiro de formação e aventureiro de coração!"
+          "Estudante de Desenvolvimento, engenheiro em formação e apaixonado por games!"
         }
         hrefIn={"https://www.linkedin.com/in/vagner-messias-2735a5182/"}
         cardLinkIn={"Linkedin"}
@@ -21,7 +21,7 @@ const Contato = () => {
         }
         cardName={"Filipe Pinheiro Teixeira"}
         cardText={
-          "Estudante de Desenvolvimento, engenheiro de formação e aventureiro de coração!"
+          "Estudante de Desenvolvimento, engenheiro de formação e atleta de futevôlei!"
         }
         hrefIn={"https://www.linkedin.com/in/teixeirapfilipe/"}
         cardLinkIn={"Linkedin"}
@@ -32,7 +32,7 @@ const Contato = () => {
         }
         cardName={"Murilo Sabino"}
         cardText={
-          "Estudante de Desenvolvimento, engenheiro de formação e aventureiro de coração!"
+          "Economista, bancário, estudante de desenvolvimento e apaixonado por viajar."
         }
         hrefIn={"https://www.linkedin.com/in/murilosabino/"}
         cardLinkIn={"Linkedin"}
@@ -41,7 +41,7 @@ const Contato = () => {
         srcImg={"https://avatars.githubusercontent.com/u/59985165?v=4"}
         cardName={"Dayane Garcia"}
         cardText={
-          "Estudante de Desenvolvimento, engenheiro de formação e aventureiro de coração!"
+          "Estudante de Desenvolvimento, fotógrafa e apaixonada por trilhas!"
         }
         hrefIn={"https://www.linkedin.com/in/dayane-garcia1/"}
         cardLinkIn={"Linkedin"}
@@ -52,7 +52,7 @@ const Contato = () => {
         }
         cardName={"Ana Carolina Faria"}
         cardText={
-          "Estudante de Desenvolvimento, engenheiro de formação e aventureiro de coração!"
+          "Estudante de Desenvolvimento, engenheira em formação e atleta de levantamento de peso!"
         }
         hrefIn={
           "https://www.linkedin.com/in/ana-carolina-faria-erthal-903008202/"

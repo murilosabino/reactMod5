@@ -4,6 +4,37 @@
     background-color: black;
 }
 
+.vazia{
+  min-height: 100vh;
+  background-image: url('https://images7.alphacoders.com/817/thumb-1920-817988.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.texto{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  color: #ccc2a6;
+  font-size: 80px;  
+  animation: fadeOut 1s linear;
+  text-align: center;
+  align-items: center;
+}
+
+
+@keyframes fadeOut {
+  from {
+    font-size: 0px;
+  }
+  to{
+    font-size: 100px;
+  }
+
+}
+
 .imagem{
     width: 100%;
     opacity: 0.3;

@@ -1,7 +1,7 @@
 .footer{
     
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: rgb(32, 32, 32);
     grid-area: footer;
@@ -16,34 +16,38 @@
 .textFooter{
     color: #ccc2a6;
     font-size: 18px;
-    display: grid;
     text-align: center;
-    
+}
+
+.icones{
+    padding: 1px;
+}
+
+.footerItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 
 i {
-    display:grid;
     color: burlywood; 
+    margin-right: 15px;
 }
 
 .endereco  {
-    display: grid;
+    
+    display: flex;
     grid-template-columns: 260px 50px;
     column-gap: 10px;
     justify-content: space-around;
     color:burlywood;
     font-size: 15px;
-    margin-top: 25px;
-    padding: 25px;
+    margin-top: 1px;
 }
 
-i{
-    color:burlywood;
-    display: flex;
-}
-.fa-instagram{
-    color:burlywood;
-}
 
 @media screen and (width: 500px) { 
 	/* estilização para larguras de viewport exatamente igual a 500px */

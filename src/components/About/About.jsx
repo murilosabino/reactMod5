@@ -19,8 +19,6 @@ class About extends React.Component {
             width="100"
             height="50"
           />
-          <h3 className={style.tituVeg}>Vegetariano</h3>
-          <h4 className={style.descrVeg}></h4>
         </div>
 
        
@@ -31,8 +29,6 @@ class About extends React.Component {
             width="100"
             height="50"
           />
-          <h3 className={style.tituTrad}>Tradicional</h3>
-          <h4 className={style.descrTrad}></h4>
         </div>
 
         <h2 className={style.app}>Peça pelo aplicativo</h2>
