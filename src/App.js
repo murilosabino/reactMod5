@@ -4,10 +4,10 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Sobre from "./Pages/Sobre/index";
-import Contato from "./Pages/Contatos/index";
+import Time from "./Pages/Time/index";
 import Menu from "./Pages/Menu/index";
 import Home from "./Pages/Home";
-import style from "./App.module.css"
+import style from "./App.module.css";
 import Footer from "./components/Footer/Footer";
 import Avaliacoes from "./Pages/Avaliacoes/index";
 
@@ -18,12 +18,12 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/Sobre" component={Sobre} />
-          <Route path="/Contato" component={Contato} />
-          <Route path="/Menu" component={Menu} />
-          <Route path="/Avaliacoes*" component={Avaliacoes} />
+          <Route path="/sobre" component={Sobre} />
+          <Route path="/time" component={Time} />
+          <Route path="/menu" component={Menu} />
+          <Route path="/avaliacoes/*" component={Avaliacoes} />
         </Switch>
-       
+
         <Footer />
       </BrowserRouter>
     </section>

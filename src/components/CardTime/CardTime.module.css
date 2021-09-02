@@ -1,0 +1,40 @@
+.cardTime {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+.imgTime {
+  max-width: 200px;
+  max-height: 300px;
+  border-radius: 40%;
+  border: 4px solid #ccc2a6;
+}
+.buttonCard {
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+}
+.nameCard {
+  font-family: "Ink Free";
+  font-size: 20px;
+  font-weight: 600;
+}
+.buttonIcon {
+  height: 15px;
+  margin-left: 300px;
+}
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.cardText {
+  font-family: "Ink Free";
+  font-size: 15px;
+}
