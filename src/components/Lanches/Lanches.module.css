@@ -45,7 +45,21 @@ p{
 }
 
 .nomedolanche{
-    font-family: 'Perpetua';
+    border-bottom: 10px;
     border:solid 1px;
     box-shadow: 1px 1px 1px 1px black;  
+    width: 25%;
+    height: 40px;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.alinha{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }

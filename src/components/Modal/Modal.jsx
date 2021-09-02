@@ -49,43 +49,51 @@ const Modal = (props) => {
     <div className={style.Modal}>
       <div className={style.Content}>
         <div className={style.Auntentication}>
-          <h1>Aréa Autenticação</h1>
-          <Input name={"Tel"} onChangeValue={handleTel} />
-          <Botao onClick={autenticacao}></Botao>
+          <h1>Autenticação</h1>
+          <div className={style.input} >
+           <Input name={"Tel"} onChangeValue={handleTel} />
+          </div >
+          <br></br>
+          <Botao onClick={autenticacao}>Entrar</Botao>
         </div>
         <div className={style.Update}>
-          <h1>Aréa do input</h1>
           <fieldset disabled={desabilitar}>
             <form onSubmit={handleFormSubmit}>
-              <Input
-                // value={value.nome}
-                type={"text"}
-                name={"NOME"}
-                onChangeValue={handleChangeInput}
-              >
-                Nome:
-              </Input>
-              <Input onChangeValue={handleChangeInput} name={"TELEFONE"}>
-                Telefone:
-              </Input>
-              <TextArea onChangeValue={handleChangeInput} name={"COMENTARIOS"}>
-                Comentario:
-              </TextArea>
-              <Input onChangeValue={handleChangeInput} name={"NOTA"}>
-                Nota:
-              </Input>
+              <div className={style.input}>
+                <Input
+                  // value={value.nome}
+                  type={"text"}
+                  name={"NOME"}
+                  onChangeValue={handleChangeInput}
+                >
+                  Nome:
+                </Input>
+                <Input onChangeValue={handleChangeInput} name={"TELEFONE"}>
+                  Telefone:
+                </Input>
+                <TextArea onChangeValue={handleChangeInput} name={"COMENTARIOS"}>
+                  Comentario:
+                </TextArea>
+                <Input onChangeValue={handleChangeInput} name={"NOTA"}>
+                  Nota:
+                </Input>
+                <br></br>
+              </div>
               <Botao onClick={handleFormSubmit}>Clique</Botao>
             </form>
           </fieldset>
         </div>
-        <Botao
-          onClick={() => {
-            fechModal();
-            props.funcao();
-          }}
-        >
-          Fechar
-        </Botao>
+        
+        <div className={style.Auntentication}>
+          <Botao
+            onClick={() => {
+              fechModal();
+              props.funcao();
+            }}
+          >
+            Fechar
+          </Botao>
+        </div>
       </div>
     </div>
   );

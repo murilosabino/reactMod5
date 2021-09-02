@@ -16,9 +16,15 @@
   background-color: white;
 }
 
-.Autentication {
+.Auntentication {
   padding: 50px;
-  background-color: green;
+  background-color: #ccc2a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .Update {
@@ -33,4 +39,8 @@
   to {
     transform: translateY(0px);
   }
+}
+
+.input{
+  width: 50%;
 }

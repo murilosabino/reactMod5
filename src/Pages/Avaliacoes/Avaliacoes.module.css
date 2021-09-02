@@ -9,8 +9,22 @@
 
 .btn {
   margin-top: 20px;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+
+.titulo{
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Perpetua';
+  font-size: 30px;
+}
+
+.teste{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }

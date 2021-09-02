@@ -76,7 +76,7 @@ const NewAssessments = () => {
               onChangeValue={handleChangeInput}
               name={"COMENTARIOS"}
             >
-              Comentario:
+              Comentário:
             </TextArea>
             <Input
               className={style.input}
@@ -88,8 +88,8 @@ const NewAssessments = () => {
           </form>
         </div>
       </fieldset>
-      <div>
-        <Botao onClick={handleFormSubmit}>Enviar</Botao>
+      <div className={style.btn}>
+        <Botao  onClick={handleFormSubmit}>Enviar</Botao>
         <Botao onClick={deleteFormSubmit}>Desfazer</Botao>
       </div>
     </div>

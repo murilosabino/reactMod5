@@ -7,7 +7,7 @@ function Header() {
     <header className={style.header}>
       <nav className={style.navH}>
         <Link to="/menu">Cardápio</Link>
-        <Link to="/time">Time de Desenvolvimento</Link>
+        <Link to="/time">Time</Link>
         <Link className={style.larica} to="/">
           Larica
         </Link>

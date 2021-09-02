@@ -24,7 +24,9 @@ const onChange = (e) => {
   return (
         <div className={styles.lanche}>
           <label className={styles.nome} htmlFor="lanche">Pesquise o lanche: </label>
-          <input className={styles.nomedolanche} type="text" name="lanche" onChange={onChange}/>
+          <div className={styles.alinha}>
+            <input className={styles.nomedolanche} type="text" name="lanche" onChange={onChange}/>
+          </div>
             {!!dadosApi ? (
               dadosApi.map((item) => {
                 return(

@@ -13,8 +13,7 @@ const Footer = () => {
           </div>
           <h3 className={style.textFooter}> Larica &copy; 2015</h3>
           <p className={style.endereco}>
-            Endereço: Rua das Pitangueiras nº 666 Bairro: Das Orquídeas - São
-            Paulo
+            Rua das Pitangueiras nº 420 Vila das Orquídeas - São Paulo
           </p>
         </div>
       </footer>

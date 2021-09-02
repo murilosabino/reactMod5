@@ -54,7 +54,7 @@ const Comentarios = () => {
   }, []);
 
   return (
-    <div>
+    <div className={style.comentario}>
       <Botao onClick={mudaDisplay}>Mostrar Comentários</Botao>
       <div style={{ display: displayComentarios }}>
         <div>

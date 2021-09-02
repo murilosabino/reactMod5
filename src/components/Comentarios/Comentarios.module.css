@@ -6,9 +6,32 @@
     flex-wrap: wrap;
     padding: 10vh;
     flex-direction: row;
+    border: 1px solid black;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    animation: animaDireita 0.3s linear 1;
 }
 
 .ImagemEditar{
     width: 5vh;
     height: 5vh;
 }
+
+.comentario{
+    margin-top: 50px;
+    margin-left: 25px;
+    min-height: 64.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animaDireita {
+    from {
+      transform: translateY(1000px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

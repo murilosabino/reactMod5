@@ -11,16 +11,17 @@ import Comentarios from "../../components/Comentarios/comentarios";
 const Avaliacoes = (props) => {
   return (
     <main className={styles.new}>
-      <h1>Seja um cliente no 10, nos avalie e tenha direito a benefícios.</h1>
-
-      <section>
-        <Link to="nova">
-          <Botao>Nos avalie</Botao>
-        </Link>
-        <Link to="edit">
-          <Botao>Confira as avaliações</Botao>
-        </Link>
-      </section>
+      <h1 className={styles.titulo}>Seja um cliente nota 10, nos avalie e tenha direito a benefícios.</h1>
+        <div className={styles.teste}>
+          <section className={styles.btn}>
+            <Link to="nova">
+              <Botao>Nos avalie</Botao>
+            </Link>
+            <Link to="edit">
+              <Botao>Confira as avaliações</Botao>
+            </Link>
+          </section>
+        </div>
 
       <Switch>
         <Route path="/avaliacoes/nova" component={NewAssessments} />
