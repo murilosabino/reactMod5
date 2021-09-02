@@ -27,44 +27,47 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# PROJETO FINAL - MÓDULO 5: API Hamburgueria
 
-### `npm run eject`
+## Descrição do Projeto
+<p>API do curso resilia com a temática de uma Hamburgueria. Este repositório trata da parte de de backend e frontend da empresa</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h4> 
+	Status do projeto: ✅ Concluído
+</h4>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Requisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [x] Rotas
+- [x] MVC
+- [x] Verbos HTTP
+- [x] CRUD
+- [x] DAO
+- [x] README.md
+- [x] Async/Await
+- [x] Código fonte no GitHub
+- [ ] Testes
+- [x] Hospedagem
+- [x] TValidação de dados
+- [ ] ORM/ODM
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Rotas
 
-## Learn More
+### GET
+#### GET Todos os lanches:
+<p>Lista todos os lanches do banco de dados: localhost:3003/</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### POST
+<p>Envia uma nova avaliação para o banco de dados, por meio de nome, telefone, comentário e nota: http://localhost:3000/avaliacoes/nova</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### PUT
+<p>Atualiza e visualiza avaliações no banco de dados: http://localhost:3000/avaliacoes/edit<ID></p>
 
-### Code Splitting
+### DELETE
+<p>Deleta 1 avaliação: http://localhost:3000/avaliacoes/edit</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Como executar?
+1. Clone o projeto.
+2. Abra o projeto em uma IDE de sua preferência.
+3. Execute o comando "npm install" para instalar as dependências necessárias.
+4. Inserir no terminal o comando "npm run start" ou "npm run dev".
