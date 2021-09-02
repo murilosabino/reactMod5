@@ -8,7 +8,7 @@ import TextArea from "../TextArea/TextArea";
 const Modal = (props) => {
   const [desabilitar, setDesabilitar] = useState(true);
 
-  const [telefone, setTelefone] = useState({ Tel: "" });
+  const [telefone, setTelefone] = useState({});
 
   const [valueInput, setValueInput] = useState({
     NOME: "",
@@ -22,15 +22,23 @@ const Modal = (props) => {
     setValueInput(valueInput);
   };
   const handleTel = (e) => {
-    const telefone = e.target.tel;
-    setTelefone(telefone);
+    const telefoneInput = e.target.value;
+    console.log(telefoneInput)
+    setTelefone(telefoneInput);
   };
   const fechModal = () => {
     setDesabilitar(true);
   };
-  const autenticacao = (props) => {
-    if (telefone === props.telefone) {
+  const autenticacao = () => {
+    if (telefone == props.telefone) {
+      console.log(telefone)
+      console.log(props.tel)
       setDesabilitar(false);
+    }
+    else
+    {
+      alert('número de Telefone Incorreto')
+      setDesabilitar(true)
     }
   };
 

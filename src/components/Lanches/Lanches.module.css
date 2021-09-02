@@ -11,6 +11,11 @@ body {
     text-align: center;
     min-height: 100vh;
     background-color: gray;
+    animation: AnimaBaixo 1s linear;
+}
+
+.conteudo{
+    animation: AnimaBaixo linear 1s;
 }
 
 .imagem {
@@ -63,3 +68,12 @@ p{
     justify-content: center;
     display: flex;
 }
+
+@keyframes AnimaBaixo {
+    from{
+      transform: translateY(50px);
+    }
+    to{
+      transform: translateY(0px);
+    }  
+  }

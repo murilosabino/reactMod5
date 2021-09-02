@@ -2,13 +2,19 @@
   display: flex;
   flex-direction: row;
   width: 200px;
+  cursor: pointer;
 }
 .imgTime {
   max-width: 200px;
   max-height: 300px;
   border-radius: 40%;
   border: 4px solid #ccc2a6;
+  transition: 0.8s;
 }
+.imgTime:hover {
+  border: 4px solid black;
+}
+
 .buttonCard {
   display: flex;
   flex-direction: column;
@@ -26,9 +32,17 @@
   font-weight: 600;
 }
 .buttonIcon {
-  height: 15px;
+  height: 30px;
+  width: 30px;
   margin-left: 300px;
+  transition: 0.5s;
 }
+
+.buttonIcon:hover{
+  height: 35px;
+  width: 35px;
+}
+
 .acordeon {
   display: flex;
   flex-direction: column;
@@ -37,4 +51,16 @@
 .cardText {
   font-family: "Ink Free";
   font-size: 15px;
+  animation: AnimaBaixo 0.8s linear;
+  margin-top: 0;
+  
+}
+
+@keyframes AnimaBaixo {
+  0%{
+    opacity: 0;
+  } 
+  100%{
+    opacity: 1;
+  }
 }

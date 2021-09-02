@@ -30,7 +30,7 @@ const onChange = (e) => {
             {!!dadosApi ? (
               dadosApi.map((item) => {
                 return(
-                  <div>
+                  <div className={styles.conteudo}>
                   {item.NOME.includes(valueInput) ? (
                     <div>
                       <p>{item.NOME}</p>

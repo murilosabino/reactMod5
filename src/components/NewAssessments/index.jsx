@@ -28,8 +28,7 @@ const NewAssessments = () => {
         valueInput
       )
       .then((response) => {
-        console.log(response.data.result);
-        alert(response.data.result.length + " cadastros!");
+        alert('Comentário Enviado!');
         setDesabilitar(true);
       });
   };
@@ -48,7 +47,6 @@ const NewAssessments = () => {
       });
   };
 
-  console.log(valueInput);
 
   return (
     <div>

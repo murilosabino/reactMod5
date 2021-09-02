@@ -3,7 +3,7 @@ import Botao from "../Botao/Botao";
 import style from "../Comentarios/Comentarios.module.css";
 import Modal from "../Modal/Modal";
 
-const Comentarios = () => {
+const Comentarios = (props) => {
   const [dadosApi, setDadosApi] = useState([]);
   const [valueInput, setValueInput] = useState([]);
   const [displayComentarios, setDisplay] = useState("none");
@@ -18,7 +18,6 @@ const Comentarios = () => {
 
   const MostraModal = () => {
     if (displayModal == "none") {
-      console.log(displayModal);
       setDisplayModal("flex");
     } else {
       setDisplayModal("none");
@@ -28,20 +27,15 @@ const Comentarios = () => {
   const clickEdit = (item) => {
     setItemTelefone(item.TELEFONE);
     setitemId(item.ID);
-    console.log(itemId);
     console.log(itemTelefone);
     MostraModal();
   };
 
   const mudaDisplay = () => {
     if (displayComentarios == "none") {
-      console.log("Mudando display pra flex");
       setDisplay("flex");
-      console.log(displayComentarios);
     } else {
-      console.log("Mudando display pra none");
       setDisplay("none");
-      console.log(displayComentarios);
     }
   };
 
